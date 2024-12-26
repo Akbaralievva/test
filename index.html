@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="KM Online Works" />
+    <meta name="keywords" content="KM Online Works" />
+    <meta name="author" content="Kamran Mubarik" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Links -->
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Home</title>
+  </head>
+  <body onload="preloader()">
+    <div class="row">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide container"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img
+              src="img/img100.jpg"
+              class="d-block w-100"
+              alt="..."
+              style="height: 200px"
+            />
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="img/101.jpg"
+              class="d-block w-100"
+              alt="..."
+              style="height: 200px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/img3.png"
+              class="d-block w-100"
+              alt="..."
+              style="height: 200px"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="container" id="wrapper">
+        <div class="row">
+          <div class="col-md-3" id="sidebar">
+            <div class="logo">
+              <img src="img/moun.jpeg" alt="logo" />
+            </div>
+            <ul class="nav flex-column">
+              <li>
+                <a href="#" onclick="showContent('content1')">Негизги бет</a>
+              </li>
+              <li>
+                <a href="#" onclick="showContent('content2')">IP протоколу</a>
+              </li>
+              <li>
+                <a href="#" onclick="showContent('content3')">Жалпы суроо</a>
+              </li>
+              <li>
+                <a href="#" onclick="showContent('content4')">REST API</a>
+              </li>
+            </ul>
+            <i class="far fa-ellipsis-v"></i>
+            <div class="copyright">
+              <p>&copy; 2024 Final sinav</p>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div id="content1" class="contents active">
+              <div id="main-area">
+                <div class="header-section"></div>
+                <!--Header Section End -->
+                <div class="content-section">
+                  <div class="section-heading">
+                    <h2 class="display-4">
+                      Негизги бет <i class="fal fa-play small"></i>
+                    </h2>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card" style="width: 100%">
+                        <a href="single.html">
+                          <img
+                            class="card-img-top"
+                            src="img/nat_bg.jpeg"
+                            alt="Card image cap"
+                          />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-truncate">
+                            Some quick example text to build on the card title.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-8" style="height: 100%; color: #fff">
+                      <h1>Алина Акбаралиева</h1>
+                      <h4>2104.01006</h4>
+                      <h3>Компьютердик инженерия болуму, 3-курс</h3>
+                      <h3>Манас университети </h3>
+                      <h4>BIL-381 Веб-технологияларга киришуу сабагы</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Content Section End -->
+                <div class="footer">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-12 order-lg-2"></div>
+                    <div class="col-lg-8 col-md-12 order-lg-1 social-links">
+                      <div class="social-links">
+                        <a href="https://kmonlineworks.blogspot.com">
+                          <i class="fas fa-globe"></i> Website
+                        </a>
+                        <a href="mailto:kmonlineworks@gmail.com">
+                          <i class="fal fa-envelope"></i> Email
+                        </a>
+                        <a href="https://web.facebook.com/kmonlineworks">
+                          <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="content2" class="contents">
+              <div id="main-area">
+                <!--Header Section End -->
+                <div class="scrollable-container">
+                <div class="content-section about">
+                  <p>
+                    Төмөндө эки хосттун IP адрестери жана subnet mask берилген.
+                    Бул эки хост бир subnet ичиндеби же жокпу? Чыгаруу жолун
+                    толук жазып, жообуңузду түшүндүрүңүз.
+                  </p>
+
+                  <ul style="color: #fff;">
+                    <li><em>1 address: 192.168.10.50 </em> </li>
+                    <li><em>host 2 address: 192.168.12.182</em> </li>
+                    <li><em>subnet mask: 255.255.224.0</em> </li>
+                    <li><em>subnet mask: 255.255.224.0</em> </li>
+                  </ul>
+
+                  <p>
+                    <b>
+                      Бул эки хост бир сабнетте жатуусун табуу учун алардын сабнет ID лерин таап алуу керек.
+                      IP адрестин subnet адресин аныктоо үчүн логикалык ЖАНА (AND)
+                    деп аталган биттик операцияны колдонбуз. IP адрес менен
+                    subnet mask адрестеринин биттерин логикалык ЖАНА (AND)
+                    операциясы менен колдонуп чыгабыз. Логикалык ЖАНА (AND)
+                    операциясы иштөө принциби: эгер эки бит тең 1 болсо, жообу 1
+                    болот. Эгер биттердин бирөө 0, бирөө 1 же экөө тең 0 болгон
+                    болсо жообу 0 болот. Subnet адресин эсептейли:
+                  </b>
+                  </p>
+
+                  <p>host 1 учун:</p>
+
+                  <ul style="color: #fff;">
+                    <li>
+                      IP address: 11000000.10101000.00001010.00110010
+                      (192.168.10.50)
+                    </li>
+                    <li>
+                      Subnet mask: 11111111.11111111.11100000.00000000
+                      (255.255.224.0)
+                    </li>
+                    <li>
+                      Network ID: 11000000.10101000.00000000.00000000
+                      (192.168.0.0)
+                    </li>
+                  </ul>
+
+                  <p>Бул хосттун(host 1) subnet адреси 192.168.0.0 болот.</p>
+
+                  <p>host 2 учун:</p>
+
+                  <ul style="color: #fff;">
+                    <li>
+                      IP address: 11000000.10101000.00001100.10110110
+                      (192.168.12.182)
+                    </li>
+                    <li>
+                      Subnet mask: 11111111.11111111.11100000.00000000
+                      (255.255.224.0)
+                    </li>
+                    <li>
+                      Network ID: 11000000.10101000.00000000.00000000
+                      (192.168.0.0)
+                    </li>
+                  </ul>
+
+                  <p>Бул хосттун(host 2) subnet адреси 192.168.0.0 болот.</p>
+
+                  <p>
+                    Жыйынтыгында, бул эки хосттун сабнеттери бирдей болгондуктан
+                    экоо бир сабнетте жатат.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Content Section End -->
+              <div class="footer">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 order-lg-2"></div>
+                  <div class="col-lg-8 col-md-12 order-lg-1 social-links">
+                    <div class="social-links">
+                      <a href="https://kmonlineworks.blogspot.com">
+                        <i class="fas fa-globe"></i> Website
+                      </a>
+                      <a href="mailto:kmonlineworks@gmail.com">
+                        <i class="fal fa-envelope"></i> Email
+                      </a>
+                      <a href="https://web.facebook.com/kmonlineworks">
+                        <i class="fab fa-facebook"></i> Facebook
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content3" class="contents">
+            <div id="main-area">
+              <!--Header Section End -->
+              <div class="scrollable-container">
+              <div class="content-section about">
+                <p>CSS жардамы менен боштуктарды калтыруу (margin and padding) 
+                  мүмкүнчүлүктөрүн түшүндүрүп бериңиз. Экөөнүн арасында кандай айырма бар?
+                   Мисал келтириңиз.</p>
+
+    <p>HTML элементтерин коробка катары элестетууго болот жана CSS
+       ошол элементтерди курчап турган коробка катары кароого болот.
+        Алар padding, border, margin</p>
+
+    <ol style="color: antiquewhite;">
+        <li><strong>content</strong> - бул жакта текттер, суроттор же башка контенттер болот</li>
+        <li><strong>padding</strong> - болсо, content менен border ортосундагы аралыкты берет</li>
+        <li><strong>margin</strong> - болсо, border сыртына карай аралыкты берет</li>
+    </ol>
+
+    <p>Мисалы, бул стилди тузуп алсак болот</p>
+
+    <pre style="color: antiquewhite;">
+        <code>
+.myClass {
+    padding: 10px;
+    border: solid 5px black;
+    margin: 20px;
+}
+        </code>
+    </pre>
+
+    <b><code>&lt;h1 class="myClass"&gt;"Final Sinav"&lt;/h1&gt;</code></b>
+
+
+    <p>h1 элементине устундогу стилдердин маанилерин берип жатабыз</p>
+              </div>
+            </div>
+
+            <!-- Content Section End -->
+            <div class="footer">
+              <div class="row">
+                <div class="col-lg-4 col-md-12 order-lg-2"></div>
+                <div class="col-lg-8 col-md-12 order-lg-1 social-links">
+                  <div class="social-links">
+                    <a href="https://kmonlineworks.blogspot.com">
+                      <i class="fas fa-globe"></i> Website
+                    </a>
+                    <a href="mailto:kmonlineworks@gmail.com">
+                      <i class="fal fa-envelope"></i> Email
+                    </a>
+                    <a href="https://web.facebook.com/kmonlineworks">
+                      <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div id="content4" class="contents">
+            <div id="main-area">
+              <!--Header Section End -->
+              <div class="scrollable-container">
+              <div class="content-section about">
+                <section class="flex-grow-1">
+                  <div class="mt-4">
+                      <label for="cityInput" class="form-label"> Мамлекет кодун жазыныз(KG, KZ, UZ):</label>
+                      <input type="text" id="cityInput" class="form-control">
+                      <button onclick="fetchData()" class="btn btn-primary mt-2">button</button>
+                  </div>
+              
+                  <div id="cityData" class="mt-4">
+                      <table class="table table-bordered table-striped">
+                          <thead>
+                              <tr>
+                                  <th scope="col">Шаар аты</th>
+                                  <th scope="col">Популяциясы</th>
+                                  <th scope="col">Коду</th>
+                                  <th scope="col">Убакыты жери</th>
+
+                              </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                      </table>
+                  </div>
+              </section>
+              </div>
+            </div>
+
+            <!-- Content Section End -->
+            <div class="footer">
+              <div class="row">
+                <div class="col-lg-4 col-md-12 order-lg-2"></div>
+                <div class="col-lg-8 col-md-12 order-lg-1 social-links">
+                  <div class="social-links">
+                    <a href="https://kmonlineworks.blogspot.com">
+                      <i class="fas fa-globe"></i> Website
+                    </a>
+                    <a href="mailto:kmonlineworks@gmail.com">
+                      <i class="fal fa-envelope"></i> Email
+                    </a>
+                    <a href="https://web.facebook.com/kmonlineworks">
+                      <i class="fab fa-facebook"></i> Facebook
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS Script Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/custom-function.js"></script>
+  </body>
+</html>
